@@ -1,0 +1,146 @@
+/* ---------- Estilos generales ----------*/
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+    white-space: pre-line; /* Para respetar los saltos de línea*/
+}
+
+/* ---------- Barra de navegación ---------- */
+.logo {
+    margin-right: auto; /* Esto empuja el logo a la izquierda */
+    display: flex; /* Asegura que el logo esté en línea */
+}
+
+ul {
+    list-style-type: none; /* Esto quita el estilo de lista ul (Los puntitos)*/
+    margin: 0; /* margin y padding controla la posición arriba y derecha*/
+    padding: 1%;
+    background-color: #ffffff; /* Color de fondo*/
+    display: flex; /* Activa el modelo de flexbox */
+    justify-content: center; /* Espacio entre el logo y los enlaces */
+    position: fixed; /* Ajusta la posición de los elementos, en este caso fixed ancla el elemento en su posición actual, y no se moverá ni con scroll*/
+    width: 100%; /* Ajusta el ancho, no afectado por padding y margin*/
+    border-bottom: 2px solid #efefef;
+    z-index: 10; /* El valor más alto sobreposiciona a los de valor más bajo, z-index: 1; sobreposiciona a los que no tienen*/
+}
+
+.link-nav {
+    display: flex;
+    flex: 1;
+    justify-content: center; /* Centra los enlaces en el espacio restante */
+}
+
+li {
+    display: flex;
+    align-items: center; /* Centra verticalmente los enlaces */
+}
+  
+li > a {
+    display: block; /* Esto hará que los enlaces ocupen el ancho completo del contenedor y puedan ser clicable en todo el contenedor*/
+    color: #153cb2;
+    text-align: center; /* Alinear el contenido en el centro del contenedor*/
+    padding: 14px 16px;
+    text-decoration: none; /* Elimina cualquier decoración de los textos, como el subrayado predeterminado de los enlaces*/
+}
+
+/* La pseudo clase :hover solo aplica el estilo cuando el ratón del usuario pase por encima*/
+li > a:hover {
+    background-color: #e2f1ff;
+    border-radius: 10px;
+}
+
+/* ---------- Página main_page ----------*/
+
+/* ---------- Sección portada ---------- */
+body {
+    margin: 0; /* Método para eliminar los espacios vaciós alrededor de los elementos*/
+}
+
+.content-gradient {
+    padding: 10% 10% 20% 10%; /* Controla el tamaño interno del div, margin es para controlar el tamaño externo (Uno es adentro y otro afuera)*/
+    display: flex; /* Contenedor flexible, puede adaptar la posición de los contenedores hijos*/
+    justify-content: center;
+    background: linear-gradient(to right, #153cb2 0%, #3c15b2 100%); /* to right siginifica a qué dirección debe apuntar el degradado y background: linear-gradient crea un degradado*/
+}
+
+.content-gradient h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.content-gradient p {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* ---------- Sección imagen1 ----------*/
+.content-image1 {
+    display: flex;
+    justify-content: center;
+    margin: -15% 0 10% 0;
+}
+
+.content-image1 > img {
+    width: 80%;  /* Ajusta el ancho */
+    height: auto;  /* Mantiene la proporción original de la imagen */
+    border-radius: 20px;
+    z-index: 1;
+    
+}
+
+/* ---------- Sección llamada a la acción ----------*/
+.content-CTA {
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: linear-gradient(to right, #153cb2 0%, #3c15b2 100%);
+}
+
+.content-CTA > h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.content-CTA > p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.content-botton1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.content-botton1 > a {
+    background-color: #ffffff;
+    color: #153cb2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 5px; /* Espacio entre botones */
+    display: inline-block; /* Para que se alineen, sino aparecerá como columna */
+}
+
+/* ---------- Sección ventajas ----------*/
+.content-solution {
+    padding: 2% 10% 2% 10%;
+    background-color: #efefef;
+}
+
+/* ---------- Sección pie de página ----------*/
+.foot-content {
+
+}
+
+.foot-logo {
+
+}
