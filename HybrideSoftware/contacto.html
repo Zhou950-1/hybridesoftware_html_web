@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Autor" content="Zhou Zhihui">
+        <meta name="Keywords" content="contacto">
+        <meta name="Description" content="Contacto">
+        
+        <link rel="stylesheet" href="./CSS/style_1.css"> <!-- Importa la hoja de estilo-->
+        <link rel="icon" href="./Resource/Hybride-Software-removebg-preview.png" type="image/png" sizes="32x32"> <!-- Favicon en formato PNG-->
+    </head>
+    <body class="form-body">
+        
+        <!-- Barra de navegación estática-->
+        <nav class="nav-bar"> 
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./Resource/Hybride-Software-removebg-preview.png" alt="logo">
+                    <p>HybrideSoftware</p>
+                </a>
+            </div> 
+            <ul>
+                <div class="link-nav">
+                    <li><a href="soluciones.html"><p>Soluciones</p></a></li>
+                    <li><a href="productos.html"><p>Productos</p></a></li>
+                    <li><a href="sobre_mi.html"><p>Sobre mí</p></a></li>
+                    <li><a href="contacto.html"><p>Contacto</p></a></li>
+                </div>
+            </ul>
+        </nav>
+        
+        <!-- Formulario de contacto-->
+         <div class="contact-form-father">
+            <div class="contact-form">
+                <form class="contact-form-content">
+                    <h3>Contacta con nosotros</h3>
+                    <input class="contact-form-input" type="text" placeholder="Ingresa tu nombre*" required> <!-- placeholder muestra las palabras dentro del recuadro de texto, pero al escribir desaparece-->
+                    <input class="contact-form-input" type="text" placeholder="Ingresa tu apellido*" required>
+                    <input class="contact-form-input" type="email" placeholder="Email*" required> <!-- Required obliga a relenar el campo-->
+                    <select class="contact-form-input"> <!-- Required no funciona en el select-->
+                        <option disabled selected>Selecciona su continente</option> <!-- disable evita que el usuario lo elija y selected lo marca como por defecto-->
+                        <option>Asia</option>
+                        <option>África</option>
+                        <option>Europa</option>
+                        <option>América</option>
+                        <option>Oceanía</option>
+                        <option>Antártida</option> <!-- Para los pinguinos-->
+                    </select>
+                    <textarea class="contact-form-input" rows="6" cols="55" placeholder="Envíanos tus consultas..."></textarea> <!-- rows la altura, cols el ancho-->
+                    <div> <!-- Si no lo meto en el padre, se pone en columna-->
+                        <input class="contact-form-input" type="checkbox">
+                        <label>Acepta nuestra política de privacidad.</label>
+                    </div>
+                    <div class="contact-form-bottom-div">
+                        <input class="contact-form-bottom" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+            <div class="contact-form-second">
+                <div class="contact-form-second-content">
+                    <h2>Servicios técnicos</h2><br>
+                    <p>Dispones de servicio técnico para consultas de 08:00 a 15:00, le atenderemos con la mayor rapidez posible.</p>
+                </div>
+            </div>
+         </div>
+
+    </body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Autor" content="Zhou Zhihui">
+        <meta name="Keywords" content="productos">
+        <meta name="Description" content="Productos">
+        
+        <link rel="stylesheet" href="./CSS/style_1.css"> <!-- Importa la hoja de estilo-->
+        <link rel="icon" href="./Resource/Hybride-Software-removebg-preview.png" type="image/png" sizes="32x32"> <!-- Favicon en formato PNG-->
+    </head>
+    <body>
+        
+        <!-- Barra de navegación estática-->
+        <nav class="nav-bar"> 
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./Resource/Hybride-Software-removebg-preview.png" alt="logo">
+                    <p>HybrideSoftware</p>
+                </a>
+            </div> 
+            <ul>
+                <div class="link-nav">
+                    <li><a href="soluciones.html"><p>Soluciones</p></a></li>
+                    <li><a href="productos.html"><p>Productos</p></a></li>
+                    <li><a href="sobre_mi.html"><p>Sobre mí</p></a></li>
+                    <li><a href="contacto.html"><p>Contacto</p></a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <main class="content-title-product">
+            <div>
+                <h1>Alojamiento fiable y seguro.</h1><br>
+                <p>Proveedores rápidos, confiables y seguros, nosotros nos ocupamos de desplegar su servicio. Elige entre los proveedores disponibles para alojar su servicio.</p>
+            </div>
+        </main>
+
+        <section class="content-title-product-img">
+            <div> <!-- Los SVG es el formato con mejor calidad de todas-->
+                <img src="./Resource/icons8-digital-ocean.svg" alt="DigitalOcean">
+                <img src="./Resource/icons8-amazon-web-services.svg" alt="Amazon-web-service">
+                <img src="./Resource/scaleway.svg" alt="Scaleway">
+            </div>
+        </section>
+
+        <!-- Tabla de productos-->
+        <section class="provideer">
+            <h2>DigitalOcean</h2>
+        </section>
+
+        <div class="product-table-div">
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Nivel</th>
+                        <th>Modelo</th>
+                        <th>vCPU</th>
+                        <th>Memoria</th>
+                        <th>SSD</th>
+                        <th>Transferencia</th>
+                        <th>$/mes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Básico</td>
+                        <td>Droplet</td>
+                        <td>1 vCPU</td>
+                        <td>512 MiB</td> <!--MiB es una medida más precisa que MB-->
+                        <td>10 GiB</td>
+                        <td>500 GiB</td>
+                        <td>$4,00</td>
+                    </tr>
+                    <tr>
+                        <td>Básico</td>
+                        <td>Droplet</td>
+                        <td>1 vCPU</td>
+                        <td>1 GiB</td>
+                        <td>25 GiB</td>
+                        <td>1000 GiB</td>
+                        <td>$6,00</td>
+                    </tr>
+                    <tr>
+                        <td>Básico</td>
+                        <td>Droplet</td>
+                        <td>1 vCPU</td>
+                        <td>2 GiB</td>
+                        <td>50 GiB</td>
+                        <td>2000 GiB</td>
+                        <td>$12,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="provideer">
+            <h2>Amazon Web Service</h2>
+        </section>
+
+        <div class="product-table-div">
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Nivel</th>
+                        <th>Modelo</th>
+                        <th>vCPU</th>
+                        <th>Memoria</th>
+                        <th>SSD</th>
+                        <th>Red</th>
+                        <th>$/mes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Básico</td>
+                        <td>t3.nano</td>
+                        <td>2 vCPU</td>
+                        <td>512 MiB</td>
+                        <td>Separado</td>
+                        <td>5 Gbps</td>
+                        <td>$8,00</td>
+                    </tr>
+                    <tr>
+                        <td>Básico</td>
+                        <td>t3.micro</td>
+                        <td>2 vCPU</td>
+                        <td>1 GiB</td>
+                        <td>Separado</td>
+                        <td>5 Gbps</td>
+                        <td>$16,00</td>
+                    </tr>
+                    <tr>
+                        <td>Básico</td>
+                        <td>t3.small</td>
+                        <td>2 vCPU</td>
+                        <td>2 GiB</td>
+                        <td>Separado</td>
+                        <td>5 Gbps</td>
+                        <td>$24,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="provideer">
+            <h2>Scaleway</h2>
+        </section>
+
+        <div class="product-table-div">
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Nivel</th>
+                        <th>Modelo</th>
+                        <th>vCPU</th>
+                        <th>Memoria</th>
+                        <th>SSD</th>
+                        <th>Red</th>
+                        <th>$/mes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Básico</td>
+                        <td>DEV1-S</td>
+                        <td>1 vCPU</td>
+                        <td>2 GiB</td>
+                        <td>20 GiB</td>
+                        <td>200 Mbps</td>
+                        <td>$3,00</td>
+                    </tr>
+                    <tr>
+                        <td>Básico</td>
+                        <td>DEV1-M</td>
+                        <td>2 vCPU</td>
+                        <td>4 GiB</td>
+                        <td>50 GiB</td>
+                        <td>400 Mbps</td>
+                        <td>$6,40</td>
+                    </tr>
+                    <tr>
+                        <td>Básico</td>
+                        <td>DEV1-L</td>
+                        <td>4 vCPU</td>
+                        <td>8 GiB</td>
+                        <td>100 GiB</td>
+                        <td>500 Mbps</td>
+                        <td>$10,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Sección para particulares-->
+         
+        
+        <footer class="foot-logo">
+            <img src="./Resource/Hybride-Software-removebg-preview.png" alt="logo">
+            <p>© 2024 HybrideSoftware.</p>
+        </footer>
+        
+    </body>
+</html>

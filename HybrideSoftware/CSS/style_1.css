@@ -1,0 +1,467 @@
+/* ---------- Fuentes de letras ----------*/
+/* La declaración ../ significa salir a un nivel superior del directorio actual, en mi caso ./ no funciona, enlace del vídeo que me enseña https://www.youtube.com/watch?v=tVhMV9XETwY*/
+/* El formato WOFF es el que tiene mayor compatibilidad en los navegadores, otros formatos son OTF, TTF y WOFF2*/
+@font-face {
+    font-family: "Hussar-Bold"; /* El nombre de la fuente*/
+    src: url("../Fonts/misc/HussarBoldWeb-bf92.woff"); /* El formato otf permite funciones más avanzadas*/
+}
+
+/* ---------- Reseteo de estilo CSS ----------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Estilos generales ----------*/
+h1 {
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* La primera es la fuente principal, y las separadas por coma las opcionales en caso de que la principal no funciona*/
+}
+
+h2 {
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+/* ---------- Barra de navegación ----------*/
+.nav-bar {
+    list-style-type: none;
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente*/
+    justify-content: space-around; /* Reparte los elementos de forma equitativa en el espacio disponible*/
+    position: fixed; /* Ancla la barra*/
+    width: 100%; /* Ancho completo de la barra*/
+    border-bottom: 2px solid #dddddd;
+    z-index: 10;
+}
+
+.logo a {
+    color: #153cb2;
+    display: flex;
+    align-items: center; /* Para alinear el logo a la misma altura que el nombre de la marca*/
+    justify-content: center;
+    text-decoration: none;
+}
+
+.logo p {
+    font-family: "Hussar-Bold";
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px; /* Espacio entre el logo y el nombre de marca*/
+}
+
+.logo a:hover {
+    text-decoration: underline; /* Efecto de línea*/
+}
+
+.link-nav {
+    display: flex;
+    justify-content: center; /* Centra los enlaces en el espacio restante*/
+    list-style: none;
+}
+
+.link-nav li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px; /* Espaciado entre los enlaces*/
+}
+
+.link-nav a {
+    color: #153cb2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.link-nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- <Página main_page> ----------*/
+
+/* ---------- Sección portada ---------- */
+.content-title {
+    padding: 15% 30% 20% 30%; /* Controla el tamaño interno del div, margin es para controlar el tamaño externo (Uno es adentro y otro afuera)*/
+    display: flex; /* Contenedor flexible, puede adaptar la posición de los contenedores hijos*/
+    justify-content: center;
+    background: linear-gradient(to right, #153cb2 0%, #3c15b2 100%); /* to right siginifica a qué dirección debe apuntar el degradado y background: linear-gradient crea un degradado*/
+}
+
+.content-title h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.content-title p {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* ---------- Sección imagen1 ----------*/
+.content-image1 {
+    display: flex;
+    justify-content: center;
+    margin: -15% 6% 10% 6%;
+}
+
+.content-image1 img {
+    width: 80%;  /* Ajusta el ancho*/
+    height: auto;  /* Mantiene la proporción original de la imagen*/
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.1); /* El cuarto valor rgba es la opacidad, el tercer px es la difusión*/
+}
+
+/* ---------- Sección llamada a la acción ----------*/
+.content-CTA {
+    margin: 10% 15%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: linear-gradient(to right, #153cb2 0%, #3c15b2 100%);
+    padding: 0 20%;
+}
+
+.content-CTA h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.content-CTA p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.content-botton1 {
+    text-align: center;
+    margin: 30px;
+}
+
+.content-botton1 a {
+    background-color: #ffffff;
+    color: #153cb2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none; /* Quita formato enlace*/
+
+    /* Usar en caso de tener más de 1 botón*/
+    /*margin: 5px; /* Espacio entre botones*/
+    /*display: inline-block; /* Para que se alineen, sino aparecerá como columna*/
+}
+
+/* ---------- Sección ventajas ----------*/
+.content-solution {
+    padding: 2% 15%;
+    background-color: #bbc1cd;
+}
+
+/* ---------- <Página soluciones> ---------- */
+
+/* ---------- Sección portada solución ----------*/
+.content-title-solution {
+    padding: 15% 30% 12% 30%; /* Controla el tamaño interno del div, margin es para controlar el tamaño externo (Uno es adentro y otro afuera)*/
+    display: flex; /* Contenedor flexible, puede adaptar la posición de los contenedores hijos*/
+    justify-content: center;
+    background: linear-gradient(to right, #153cb2 0%, #3c15b2 100%); /* to right siginifica a qué dirección debe apuntar el degradado y background: linear-gradient crea un degradado*/
+}
+
+.content-title-solution h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.content-title-solution p {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* ---------- Sección soluciones explicación ----------*/
+.solution-title {
+    text-align: center;
+    margin: 10% 30%;
+}
+
+.solution-title a {
+    text-decoration: none;
+    color: #153cb2;
+}
+
+.solution-title a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Sección de tarjetas de soluciones ----------*/
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto; /* Para repartir las terjetas en 3 partes automáticamente*/
+    gap: 3%; /* Espacio entre las tarjetas*/
+    margin: 5% 15%; /* Espacio entre el body*/
+}
+
+.solution-box {
+    display: flex;
+    flex-direction: column; /* Mantiene el contenido de los div grid en modo columna*/
+    padding: 3%;
+    background-color: #bbc1cd;
+    border: 2px solid #dddddd;
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.1); /* Sombras*/
+}
+
+.content-banner {
+    display: flex; /* Activa el contenedor flex*/
+    justify-content: left; /* Mantiene el encabezado a la izquierda*/
+    align-items: center; /* Alinea la imagen y el título*/
+    margin: 20px 10px;
+}
+
+.solution-box img {
+    width: 50px;  /* Ajusta el ancho*/
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 5%;
+}
+
+.solution-box h3 {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.solution-box p {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.solution-box-content {
+    border-top: dashed 2px #dddddd;
+    padding: 30px 10px;
+
+}
+
+/* ---------- <Página producto> ----------*/
+/* ---------- Sección productos ----------*/
+.content-title-product {
+    padding: 15% 30% 8% 30%; /* Controla el tamaño interno del div, margin es para controlar el tamaño externo (Uno es adentro y otro afuera)*/
+    display: flex; /* Contenedor flexible, puede adaptar la posición de los contenedores hijos*/
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right, #153cb2 0%, #3c15b2 100%); /* to right siginifica a qué dirección debe apuntar el degradado y background: linear-gradient crea un degradado*/
+}
+
+.content-title-product h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.content-title-product p {
+    text-align: center;
+    color: #ffffff;
+}
+
+.content-title-product-img {
+    display: flex;
+    align-items: center; /* Alinea los logos horizontalmente*/
+    justify-content: center; /* Centra los elementos en el centro de la pantalla*/
+    background-color: #bbc1cd;
+    padding-bottom: 45px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-title-product-img img {
+    margin-top: 50px;
+    padding: 0 30px; /* Controla el espacio entre los logos*/
+    width: 50px;
+    height: auto;
+}
+
+/* ---------- Sección tabla de productos ----------*/
+/* Para que la tabla se centre y no se deforme con Flex, hay que añadir el estilo en una clase padre superior, literalmente pensar fuera de la caja*/
+.product-table-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5% 5% 5%;
+}
+
+.provideer {
+    display: flex;
+    justify-content: center;
+    margin: 10% 0 5% 0;
+}
+
+.product-table th {
+    border-bottom: 2px dashed #bbc1cd;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.product-table td {
+    border-bottom: 2px solid #bbc1cd;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.product-table tr:nth-child(even) { /* Añade este estilo a los hijos de tr que sean pares, por eso se llama even, para los impares es odd*/
+    background-color: #153cb2;
+    color: #ffffff;
+}
+
+/* ---------- <Página sobre mí> ----------*/
+/* ---------- Sección portada presentación ----------*/
+.about-me {
+    background: linear-gradient(to right, #153cb2 0%, #3c15b2 100%);
+    display: flex; /* Contenedor flexible, puede adaptar la posición de los contenedores hijos*/
+}
+
+.about-me-content {
+    margin: 15% 0 0 15%; /* Está así la distribución del margen para que la foto quede bien*/
+    padding-right: 15%;
+    color: #ffffff;
+}
+
+.about-me-img {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.about-me-img img {
+    width: 700px;
+    height: auto;
+}
+
+/* Explicar sobre mí*/
+.my-history {
+    margin: 17% 30%;
+    text-align: left;
+}
+
+.my-history h3 {
+    text-align: center;
+}
+
+/* ---------- <Página de contacto> ----------*/
+/* ---------- Sección formulario de contacto ----------*/
+/* El color del body*/
+.form-body {
+    background-color: #bbc1cd;
+}
+
+.contact-form-father {
+    display: flex;
+    align-items: center;
+}
+
+/* Controla el tamaño del formulario*/
+.contact-form {
+    padding: 5% 10% 0 10%;
+}
+
+/* Controla el contenido del formulario*/
+.contact-form-content {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: solid 2px #dddddd;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    display: flex;
+    flex-direction: column; /* Formulario en modo columna*/
+    justify-content: left;
+}
+
+.contact-form-content h3 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.contact-form-content p {
+    font-size: 15px;
+}
+
+.contact-form-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: solid 1px #bbc1cd;
+}
+
+.contact-form-bottom-div {
+    margin-top: 10px;
+    border-top: solid 1px #bbc1cd;
+}
+
+.contact-form-bottom {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px #bbc1cd;
+    background-color: #153cb2;
+    color: #ffffff;
+    width: 100%; /* Para estilar el botón hasta el final, al aplicar la clase padre div se me descolocó*/
+}
+
+.contact-form-second {
+    background-image: url(../Resource/fondo-azul-unsplash.jpg); /* La ruta de la imagen*/
+    background-size: cover; /* Ocupa todo el área del div con su proporción original*/
+    width: 100%; /* Ocupa el 100% del ancho*/
+    height: 900px; /* Defino la altura de forma explícita*/
+}
+
+.contact-form-second-content {
+    color: #ffffff;
+    padding: 40% 15%;
+}
+
+/* ---------- Sección pie de página ----------*/
+/* Usar cuanto tenga más enlaces
+.foot-content {
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #efefef;
+    text-align: center;
+}
+*/
+
+.foot-logo {
+    display: flex;
+    padding: 5% 10%;
+    color: #153cb2;
+    background-color: #bbc1cd;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* ---------- Sección @media ----------*/
+/* Según las pruebas, las páginas profesionales muestran el formato móvil cuando la pantalla está en modo dividida*/
+@media only screen and (max-width: 768px) {
+    * {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* La responsividad es horrible lo se*/
