@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <link rel="alternate" title="HybrideSoftware New Solutions RSS" href="https://cristalab.com/feeds.xml" type="application/rss+xml"> en index.xml -->
+<rss version="2.0">
+    <channel>
+        <title>HybrideSoftware</title>
+        <link>https://hybridesoftware.zhou-zhihui.es</link>
+        <description>HybrideSoftware New Solutions availabre</description>
+        <languaje>es</languaje>
+        <item>
+            <title>¡Odoo disponible!</title>
+            <link>https://hybridesoftware.zhou-zhihui.es/soluciones.html</link>
+            <!-- Inspiración: https://www.xataka.com/feedburner.xml -->
+            <description><![CDATA[<img src="./RSS_img/Odoo_img.jpg" alt="Descripción de la imagen"> Odoo es un ERP (Enterprise Resource Planning) que crea página web, gestiona inventarios, camapñas de marketing y atomatización de procesos todo en uno, de código abierto y para todo el equipo. Como alternativa a Salesforce y SAP.]]></description>
+        </item>
+    </channel>
+</rss>
