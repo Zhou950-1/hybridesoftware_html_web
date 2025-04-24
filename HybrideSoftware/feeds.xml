@@ -3,14 +3,18 @@
 <rss version="2.0">
     <channel>
         <title>HybrideSoftware</title>
+        <!-- Página web principal -->
         <link>https://hybridesoftware.zhou-zhihui.es</link>
         <description>HybrideSoftware New Solutions availabre</description>
-        <languaje>es</languaje>
+        <!-- Indica tipo de contenido y ubicación del canal -->
+        <atom:link href="https://hybridesoftware.zhou-zhihui.es/feeds.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title>¡Odoo disponible!</title>
             <link>https://hybridesoftware.zhou-zhihui.es/soluciones.html</link>
+            <!-- Identificador de contenido único (evita duplicados), aún sin enlaces internas para enlazar a la noticia específica-->
+            <guid>https://hybridesoftware.zhou-zhihui.essolutions.html</guid>
             <!-- Inspiración: https://www.xataka.com/feedburner.xml -->
-            <description><![CDATA[<img src="./RSS_img/Odoo_img.jpg" alt="Descripción de la imagen"> Odoo es un ERP (Enterprise Resource Planning) que crea página web, gestiona inventarios, camapñas de marketing y atomatización de procesos todo en uno, de código abierto y para todo el equipo. Como alternativa a Salesforce y SAP.]]></description>
+            <description><![CDATA[<img src="https://hybridesoftware.zhou-zhihui.es/RSS_img/Odoo_img.jpg" alt="Descripción de la imagen"> Odoo es un ERP (Enterprise Resource Planning) que crea página web, gestiona inventarios, camapñas de marketing y atomatización de procesos todo en uno, de código abierto y para todo el equipo. Como alternativa a Salesforce y SAP.]]></description>
         </item>
     </channel>
 </rss>
