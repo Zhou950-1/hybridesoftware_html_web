@@ -1,2 +1,5 @@
 # hybridesoftware_html_web
-A website made by a student
+Una página web hecho por un estudiante
+
+## Canal RSS
+https://hybridesoftware.zhou-zhihui.es/feeds.xml
