@@ -14,7 +14,7 @@
             <!-- Identificador de contenido único (evita duplicados), aún sin enlaces internas para enlazar a la noticia específica-->
             <guid>https://hybridesoftware.zhou-zhihui.essolutions.html</guid>
             <!-- Inspiración: https://www.xataka.com/feedburner.xml -->
-            <description><![CDATA[<img src="https://hybridesoftware.zhou-zhihui.es/RSS_img/Odoo_img.jpg" alt="Descripción de la imagen"> Odoo es un ERP (Enterprise Resource Planning) que crea página web, gestiona inventarios, camapñas de marketing y atomatización de procesos todo en uno, de código abierto y para todo el equipo. Como alternativa a Salesforce y SAP.]]></description>
+            <description><![CDATA[<img src="https://hybridesoftware.zhou-zhihui.es/RSS_img/Odoo_img.jpg" alt="Odoo disponible"> Odoo es un ERP (Enterprise Resource Planning) que crea página web, gestiona inventarios, campañas de marketing y atomatización de procesos todo en uno, de código abierto y para todo el equipo. Como alternativa a Salesforce y SAP.]]></description>
         </item>
     </channel>
 </rss>
